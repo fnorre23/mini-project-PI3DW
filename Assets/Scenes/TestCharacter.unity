@@ -520,8 +520,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 1
   jumpForce: 5
   cameraTransform: {fileID: 1082167236}
+  moveAction: {fileID: -234442422666551326, guid: d6707e7dbedeb704b912df119a70296e, type: 3}
+  jumpAction: {fileID: 4263561075458052455, guid: d6707e7dbedeb704b912df119a70296e, type: 3}
+  rotateAction: {fileID: 8798913624186925136, guid: d6707e7dbedeb704b912df119a70296e, type: 3}
 --- !u!1 &927068657
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +787,8 @@ MonoBehaviour:
   target: {fileID: 699633614}
   distance: 15
   verticalAngle: 45
-  rotationSpeed: 1000
+  rotationSpeed: 100
+  rotateAction: {fileID: 8798913624186925136, guid: d6707e7dbedeb704b912df119a70296e, type: 3}
 --- !u!1 &1255808756
 GameObject:
   m_ObjectHideFlags: 0
