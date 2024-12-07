@@ -60,7 +60,11 @@ public class PlayerMovement2 : MonoBehaviour
         Vector3 movement = moveDirection * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + movement);
 
-        if (movementInput != Vector3.zero)
+        // Define a small threshold to prevent rotation on minor movements
+        float movementThreshold = 0.1f;
+
+        // Only update rotation if the movement input is above the threshold
+        if (movementInput.magnitude > movementThreshold)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
