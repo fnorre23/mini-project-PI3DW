@@ -8,6 +8,7 @@ public class FireballShooter : MonoBehaviour
     public Transform fireballSpawnPoint;
     public float fireballSpeed = 10f;
     public int maxFireballs = 3; // Limit for active fireballs
+    public float lifeTime = 5f; // Time before fireball auto-destroys
 
     private int currentFireballCount = 0;
 
@@ -50,7 +51,7 @@ public class FireballShooter : MonoBehaviour
             fireballCollision.OnFireballDestroyed += HandleFireballDestroyed;
         }
 
-        Destroy(fireball, 5f); // Ensure fireball auto-destroys after 5 seconds
+        Destroy(fireball, lifeTime); // Ensure fireball auto-destroys after 5 seconds
     }
 
     private void HandleFireballDestroyed()

@@ -7,6 +7,7 @@ public class Fireball : MonoBehaviour
 
     private bool hasCollided = false;
 
+
     void OnCollisionEnter(Collision collision)
     {
         if (!hasCollided) // Prevent multiple triggers

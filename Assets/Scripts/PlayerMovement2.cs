@@ -79,6 +79,12 @@ public class PlayerMovement2 : MonoBehaviour
         {
             transform.Rotate(Vector3.up, rotationInput * rotationSpeed * Time.fixedDeltaTime);
         }
+
+        //If character has stopped moving, stop all rotation
+        if (movementInput.magnitude == 0)
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void OnJump()
