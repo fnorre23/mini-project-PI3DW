@@ -1,4 +1,4 @@
-# Pi3D Example Mini-project
+# Pi3DW Mini-project - fnorre23
 
 
 ## Overview of the Game
@@ -9,7 +9,7 @@ By shooting the targets, you gain speed, so you can find the other targets faste
 The main parts of the game are:
 - Player - Pill, moved with WASD
 - Camera - following the player, and rotating around the player with Q and E. If a wall obstructs the player, it turns see through, so the player always can see the character.
-- Fireball shooting - Shoot a fireball by pressing F
+- Fireball shooting - Shoot a fireball by pressing F. The fireball uses a particle system to give some movement.
 - Targets - Shoot targets to gain speed. Shoot all targets to win.
 - Dungeon - A small dungeon layout for the player to find the targets.
 
@@ -50,9 +50,9 @@ Game features:
 |     Adding fireball                                                            |     0.5                            |
 |     Level creation                                                             |     1                              |
 |     Target creation + GameManager                                              |     0.75                           |
-|     Final touches                                                              |     1                              |                                                     |     1                              |
+|     Final touches                                                              |     1                              |                                                                           |
 |     Making readme                                                              |     0.5                            |
-|     **All**                                                                        |     **8**                           |
+|     **All**                                                                    |     **8**                          |
 
 ## References
 - Getting character moving: https://www.youtube.com/watch?v=ONlMEZs9Rgw 
